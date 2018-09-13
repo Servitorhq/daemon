@@ -6,7 +6,7 @@ var { Setup }       = require('./setup');
 var { Statistics }  = require('./statistics');
 var { Daemon }      = require('./daemon');
 
-commander.version('0.0.2')
+commander.version('0.0.3')
     .option('-s, --setup', 'Setup the daemon.')
     .option('-u, --url [url]', 'Custom url for development purposes.', 'api.servitor.pw')
     .option('-d, --daemon', 'Run this application as a daemon, required for real time statistics')
