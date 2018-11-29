@@ -99,7 +99,9 @@ exports.Statistics = class {
 
     doRequest(options){
         this.request(options, function (error, response, body) {
-            if (!error && response.statusCode === 200) {
+            if (error && !response){
+                console.log(error, options);
+            } else if (!error && response.statusCode === 200) {
                 console.log(body)
             }else{
                 console.log(response.statusCode);
